@@ -1,0 +1,7 @@
+.about{
+    font-family: Georgia, serif;
+}
+.contact{
+    display: inline-block;
+    background-color: rgba(100, 100, 100, 0.5);
+}

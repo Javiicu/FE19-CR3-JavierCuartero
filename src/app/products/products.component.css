@@ -1,0 +1,14 @@
+.cards{
+    font-family: Georgia, serif;
+}
+
+.not{
+    color: red;
+}
+.order{
+    background-color: green;
+}
+.buttons{
+    display:inline-block;
+   margin-right:5px;
+}

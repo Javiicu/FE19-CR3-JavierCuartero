@@ -1,0 +1,10 @@
+.hero{
+    background-image: url('../../assets/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    text-align: center;
+    padding: 60px 0px 0px 0px;
+    font-family: Papyrus, fantasy;
+}

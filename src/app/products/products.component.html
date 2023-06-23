@@ -1,0 +1,27 @@
+<div class="cards">
+    <h2>Our specialties</h2>
+
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 row-gap-3">
+        <div *ngFor="let product of products; index as i">
+            <div class="card" style="width: 18rem;">
+                <img src="{{product.image}}" class="card-img-top" alt="..." style="height: 13rem;">
+                <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5><hr>
+                <p class="card-text"> {{product.price}} € </p><hr>
+                <div *ngIf="product.availability; else elseBlock">
+                    <a routerLink="/product/{{ i }}" class="btn btn-primary buttons">Details</a>
+                    <button (click)="addToCart(i)" class="btn btn-primary order buttons">Order</button>
+                    
+                </div>
+                <ng-template #elseBlock>
+                    <p class="not">This product is not available</p>
+                </ng-template>
+                
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
